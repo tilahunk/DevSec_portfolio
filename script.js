@@ -1,92 +1,145 @@
 const contentUrl = 'content.json';
 
+const selectors = {
+  brand: '#brand-title',
+  subtitle: '#brand-subtitle',
+  hero: {
+    eyebrow: '#hero-eyebrow',
+    headline: '#hero-headline',
+    description: '#hero-description',
+    photo: '#hero-photo',
+    cta: '#hero-cta'
+  },
+  about: {
+    heading: '#about-heading',
+    description: '#about-description',
+    paragraph: '#about-paragraph',
+    list: '#about-list',
+    cardHeading: '#about-card-heading',
+    cardText: '#about-card-text'
+  },
+  skills: {
+    heading: '#skills-heading',
+    description: '#skills-description',
+    grid: '#skills-grid'
+  },
+  experience: {
+    heading: '#experience-heading',
+    description: '#experience-description',
+    timeline: '#experience-timeline'
+  },
+  projects: {
+    heading: '#projects-heading',
+    description: '#projects-description',
+    grid: '#projects-grid'
+  },
+  contact: {
+    heading: '#contact-heading',
+    description: '#contact-description',
+    email: '#contact-email',
+    linkedin: '#contact-linkedin',
+    github: '#contact-github'
+  },
+  footer: '#footer-text'
+};
+
 async function loadContent() {
   try {
     const response = await fetch(contentUrl);
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    if (!response.ok) throw new Error(`Failed to load ${contentUrl} (${response.status})`);
     const content = await response.json();
-    applyContent(content);
+    populatePage(content);
   } catch (error) {
-    console.error('Failed to load dynamic content:', error);
+    console.error(error);
   }
 }
 
 function setText(selector, text) {
-  const el = document.querySelector(selector);
-  if (el && text != null) el.textContent = text;
+  const node = document.querySelector(selector);
+  if (node && text != null) node.textContent = text;
 }
 
-function setImage(selector, src, alt) {
-  const el = document.querySelector(selector);
-  if (el && src != null) {
-    el.src = src;
-    if (alt != null) el.alt = alt;
-  }
+function setAttribute(selector, name, value) {
+  const node = document.querySelector(selector);
+  if (node && value != null) node.setAttribute(name, value);
 }
 
-function renderList(containerSelector, items, renderItem) {
-  const container = document.querySelector(containerSelector);
-  if (!container || !Array.isArray(items)) return;
-  container.innerHTML = items.map(renderItem).join('');
+function renderList(selector, items, renderItem) {
+  const node = document.querySelector(selector);
+  if (!node || !Array.isArray(items)) return;
+  node.innerHTML = items.map(renderItem).join('');
 }
 
-function applyContent(data) {
+function populatePage(data) {
   if (!data) return;
 
   document.title = data.metadata?.title || document.title;
 
-  setText('#brand-title', data.brand?.title);
-  setText('#brand-subtitle', data.brand?.subtitle);
+  setText(selectors.brand, data.brand?.title);
+  setText(selectors.subtitle, data.brand?.subtitle);
 
-  setText('#hero-eyebrow', data.hero?.eyebrow);
-  setText('#hero-headline', data.hero?.headline);
-  setText('#hero-description', data.hero?.description);
-  setImage('#hero-photo', data.hero?.photo, 'Professional Photo');
-  setLink('#hero-cta', data.hero?.ctaHref, data.hero?.cta);
+  setText(selectors.hero.eyebrow, data.hero?.eyebrow);
+  setText(selectors.hero.headline, data.hero?.headline);
+  setText(selectors.hero.description, data.hero?.description);
 
-  setText('#about-heading', data.about?.heading);
-  setText('#about-description', data.about?.description);
-  setText('#about-paragraph', data.about?.paragraph);
-  setText('#about-card-heading', data.about?.cardHeading);
-  setText('#about-card-text', data.about?.cardText);
+  const heroPhoto = document.querySelector(selectors.hero.photo);
+  const heroPhotoWrapper = heroPhoto?.closest('.hero-photo');
+  if (heroPhoto && data.hero?.photo) {
+    heroPhoto.src = data.hero.photo;
+    heroPhoto.alt = data.hero?.photoAlt || 'Professional portrait';
+    heroPhotoWrapper?.classList.remove('hidden');
+  } else {
+    heroPhotoWrapper?.classList.add('hidden');
+  }
 
-  renderList('#about-list', data.about?.items, item => `<li>${item}</li>`);
+  setAttribute(selectors.hero.cta, 'href', data.hero?.ctaHref || '#contact');
+  setText(selectors.hero.cta, data.hero?.cta);
 
-  setText('#skills-heading', data.skills?.heading);
-  setText('#skills-description', data.skills?.description);
-  renderList('#skills-grid', data.skills?.items, item => `
-    <div class="skill-card">
+  setText(selectors.about.heading, data.about?.heading);
+  setText(selectors.about.description, data.about?.description);
+  setText(selectors.about.paragraph, data.about?.paragraph);
+  setText(selectors.about.cardHeading, data.about?.cardHeading);
+  setText(selectors.about.cardText, data.about?.cardText);
+  renderList(selectors.about.list, data.about?.items, item => `<li>${item}</li>`);
+
+  setText(selectors.skills.heading, data.skills?.heading);
+  setText(selectors.skills.description, data.skills?.description);
+  renderList(selectors.skills.grid, data.skills?.items, item => `
+    <article class="skill-card">
       <h3>${item.title}</h3>
       <p>${item.description}</p>
-    </div>
+    </article>
   `);
 
-  setText('#experience-heading', data.experience?.heading);
-  setText('#experience-description', data.experience?.description);
-  renderList('#experience-timeline', data.experience?.items, item => `
-    <div class="timeline-item">
+  setText(selectors.experience.heading, data.experience?.heading);
+  setText(selectors.experience.description, data.experience?.description);
+  renderList(selectors.experience.timeline, data.experience?.items, item => `
+    <article class="timeline-item">
       <h3>${item.title}</h3>
       <span>${item.date}</span>
       <p>${item.details}</p>
-    </div>
+    </article>
   `);
 
-  setText('#projects-heading', data.projects?.heading);
-  setText('#projects-description', data.projects?.description);
-  renderList('#projects-grid', data.projects?.items, item => `
+  setText(selectors.projects.heading, data.projects?.heading);
+  setText(selectors.projects.description, data.projects?.description);
+  renderList(selectors.projects.grid, data.projects?.items, item => `
     <article class="project-card">
       <h3>${item.title}</h3>
       <p>${item.description}</p>
     </article>
   `);
 
-  setText('#contact-heading', data.contact?.heading);
-  setText('#contact-description', data.contact?.description);
-  setLink('#contact-email', `mailto:${data.contact?.email}`, data.contact?.email);
-  setLink('#contact-linkedin', data.contact?.linkedin?.url, data.contact?.linkedin?.label);
-  setLink('#contact-github', data.contact?.github?.url, data.contact?.github?.label);
+  setText(selectors.contact.heading, data.contact?.heading);
+  setText(selectors.contact.description, data.contact?.description);
+  setAttribute(selectors.contact.email, 'href', `mailto:${data.contact?.email || ''}`);
+  setText(selectors.contact.email, data.contact?.email);
+  setAttribute(selectors.contact.linkedin, 'href', data.contact?.linkedin?.url || '#');
+  setText(selectors.contact.linkedin, data.contact?.linkedin?.label);
+  setAttribute(selectors.contact.github, 'href', data.contact?.github?.url || '#');
+  setText(selectors.contact.github, data.contact?.github?.label);
 
-  setText('#footer-text', data.footer?.text);
+  setText(selectors.footer, data.footer?.text);
 }
 
 document.addEventListener('DOMContentLoaded', loadContent);
