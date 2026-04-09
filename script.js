@@ -1,7 +1,6 @@
 const contentUrl = 'content.json';
 
 const selectors = {
-  brand: '#brand-title',
   subtitle: '#brand-subtitle',
   hero: {
     eyebrow: '#hero-eyebrow',
@@ -75,7 +74,6 @@ function populatePage(data) {
 
   document.title = data.metadata?.title || document.title;
 
-  setText(selectors.brand, data.brand?.title);
   setText(selectors.subtitle, data.brand?.subtitle);
 
   setText(selectors.hero.eyebrow, data.hero?.eyebrow);

@@ -1,116 +1,102 @@
-{
-  "metadata": {
-    "title": "Full-Stack Developer & Cybersecurity Specialist"
-  },
-  "brand": {
-    "title": "IamTechSecure",
-    "subtitle": "Bridging Development & Security"
-  },
-  "hero": {
-    "eyebrow": "Where Development Meets Security",
-    "headline": "5 years in software development and 2 years in cybersecurity, creating secure systems from the ground up.",
-    "description": "My cybersecurity expertise makes me a better developer, and my development experience makes me a more effective cybersecurity engineer.",
-    "photo": "profile.jpg",
-    "cta": "Let's connect",
-    "ctaHref": "#contact"
-  },
-  "about": {
-    "heading": "About Me",
-    "description": "A unique blend of software development and cybersecurity skills, enabling me to build secure applications and identify vulnerabilities effectively.",
-    "paragraph": "With 5 years in software development, I understand how systems are built, which enhances my cybersecurity approach. My 2 years in cybersecurity, particularly IAM and pentesting, allow me to write more secure code and identify threats proactively.",
-    "items": [
-      "Secure coding practices informed by pentesting experience",
-      "IAM integration in development workflows",
-      "Threat modeling during software design",
-      "Vulnerability assessment of custom applications"
-    ],
-    "cardHeading": "Core strengths",
-    "cardText": "Bridging development and security for holistic, resilient solutions."
-  },
-  "skills": {
-    "heading": "Skills",
-    "description": "Technical expertise that spans development and security, enabling secure-by-design solutions.",
-    "items": [
-      {
-        "title": "Software Development",
-        "description": "Full-stack development with secure coding practices, informed by cybersecurity knowledge."
-      },
-      {
-        "title": "Identity & Access Management",
-        "description": "Azure AD, Okta, IAM governance, SSO, MFA, RBAC, least privilege, identity lifecycle."
-      },
-      {
-        "title": "Penetration Testing",
-        "description": "Web application pentesting, network assessments, exploit validation, Burp Suite, Metasploit, OSINT."
-      },
-      {
-        "title": "Cloud Security",
-        "description": "AWS, Azure, secure configuration, IAM roles, misconfiguration remediation, cloud threat modeling."
-      },
-      {
-        "title": "Security Operations",
-        "description": "Vulnerability management, incident response support, security assessments, compliance reporting."
-      }
-    ]
-  },
-  "experience": {
-    "heading": "Experience",
-    "description": "A career blending software development with cybersecurity expertise for comprehensive solutions.",
-    "items": [
-      {
-        "title": "IAM Specialist",
-        "date": "2024 - Present",
-        "details": "Designed and implemented identity governance controls, leveraging development skills to automate access reviews and reduce privilege exposure across multi-cloud environments."
-      },
-      {
-        "title": "Penetration Tester",
-        "date": "2023 - Present",
-        "details": "Performed web app and network pentests, using development knowledge to understand code vulnerabilities and produce actionable reports for remediation."
-      },
-      {
-        "title": "Full-Stack Developer",
-        "date": "2019 - 2024",
-        "details": "Developed secure web applications and systems, applying best practices informed by emerging cybersecurity knowledge to build resilient software."
-      },
-      {
-        "title": "Cybersecurity Analyst",
-        "date": "2019 - 2023",
-        "details": "Delivered security assessments and supported access implementations, applying development experience to build secure systems in hybrid enterprise settings."
-      }
-    ]
-  },
-  "projects": {
-    "heading": "Projects",
-    "description": "Initiatives that demonstrate the integration of development and security skills.",
-    "items": [
-      {
-        "title": "Enterprise IAM Rollout",
-        "description": "Developed and implemented centralized identity management with MFA, ensuring secure access while maintaining usability for 3,000+ users across SaaS applications."
-      },
-      {
-        "title": "Web Application Pentest",
-        "description": "Conducted penetration testing on custom web applications, identifying vulnerabilities informed by deep development knowledge and validating secure fixes."
-      },
-      {
-        "title": "Cloud Security Review",
-        "description": "Assessed and remediated cloud IAM policies, combining development insights with security expertise to reduce over-privileged access and improve compliance."
-      }
-    ]
-  },
-  "contact": {
-    "heading": "Contact",
-    "description": "Ready to bring development and security expertise to your team for secure, innovative solutions.",
-    "email": "your.email@example.com",
-    "linkedin": {
-      "url": "https://www.linkedin.com/in/your-profile",
-      "label": "linkedin.com/in/your-profile"
-    },
-    "github": {
-      "url": "https://github.com/your-username",
-      "label": "github.com/your-username"
-    }
-  },
-  "footer": {
-    "text": "© 2026 Cybersecurity Portfolio. Built for IAM and pentesting professionals."
-  }
+﻿{
+    "metadata":  {
+                     "title":  "Software Developer \u0026 Cybersecurity Professional"
+                 },
+    "brand":  {
+                  "subtitle":  "Software Developer | IAM | Pentester"
+              },
+    "hero":  {
+                 "eyebrow":  "Software Development and Cybersecurity",
+                 "headline":  "Software developer from February 2019 to June 2024, now focused on cybersecurity with strengths in IAM and penetration testing.",
+                 "description":  "I combine a strong software engineering foundation with hands-on cybersecurity experience to build, assess, and improve secure digital systems.",
+                 "photo":  "profile.jpg",
+                 "cta":  "Contact Me",
+                 "ctaHref":  "#contact"
+             },
+    "about":  {
+                  "heading":  "About Me",
+                  "description":  "I bring together software development experience and cybersecurity expertise to deliver secure, reliable, and well-structured solutions.",
+                  "paragraph":  "My background in software development from February 2019 to June 2024 gave me a deep understanding of application architecture, system behavior, and secure implementation. Since July 2024, I have focused on cybersecurity, with particular strength in identity and access management and penetration testing.",
+                  "items":  [
+                                "Secure application development grounded in real-world engineering experience",
+                                "Identity and access management with a focus on governance, access control, and user lifecycle",
+                                "Penetration testing for web applications and enterprise environments",
+                                "Clear security recommendations that support practical remediation"
+                            ],
+                  "cardHeading":  "Core strengths",
+                  "cardText":  "A professional blend of development discipline and security-focused problem solving."
+              },
+    "skills":  {
+                   "heading":  "Skills",
+                   "description":  "A focused skill set across software development, identity security, and offensive security testing.",
+                   "items":  [
+                                 {
+                                     "title":  "Software Development",
+                                     "description":  "Application development with emphasis on code quality, maintainability, and secure implementation."
+                                 },
+                                 {
+                                     "title":  "Identity \u0026 Access Management",
+                                     "description":  "IAM governance, SSO, MFA, RBAC, least privilege, access reviews, and identity lifecycle management."
+                                 },
+                                 {
+                                     "title":  "Penetration Testing",
+                                     "description":  "Web application and network testing, vulnerability validation, security reporting, and remediation guidance."
+                                 }
+                             ]
+               },
+    "experience":  {
+                       "heading":  "Experience",
+                       "description":  "Professional experience spanning software development and cybersecurity, with current focus on IAM and penetration testing.",
+                       "items":  [
+                                     {
+                                         "title":  "Cybersecurity Professional",
+                                         "date":  "July 2024 - Present",
+                                         "details":  "Focused on cybersecurity with specialization in identity and access management and penetration testing, helping strengthen access controls, identify vulnerabilities, and support secure remediation."
+                                     },
+                                     {
+                                         "title":  "IAM \u0026 Penetration Testing",
+                                         "date":  "July 2024 - Present",
+                                         "details":  "Worked across IAM and pentesting initiatives, contributing to access governance, authentication security, vulnerability assessment, and actionable risk reduction."
+                                     },
+                                     {
+                                         "title":  "Software Developer",
+                                         "date":  "February 2019 - June 2024",
+                                         "details":  "Built and maintained software solutions with attention to performance, usability, and clean implementation, creating a strong technical foundation for later security-focused work."
+                                     }
+                                 ]
+                   },
+    "projects":  {
+                     "heading":  "Projects",
+                     "description":  "Selected work that reflects my development background and current cybersecurity focus.",
+                     "items":  [
+                                   {
+                                       "title":  "Enterprise IAM Rollout",
+                                       "description":  "Supported the implementation of centralized identity management with MFA and stronger access controls to improve both security and usability."
+                                   },
+                                   {
+                                       "title":  "Web Application Pentest",
+                                       "description":  "Performed security testing on web applications, identified vulnerabilities, and provided practical remediation guidance informed by development experience."
+                                   },
+                                   {
+                                       "title":  "Access Governance Improvement",
+                                       "description":  "Reviewed identity and access controls to help reduce excessive privileges, improve governance, and support a more secure operating environment."
+                                   }
+                               ]
+                 },
+    "contact":  {
+                    "heading":  "Contact",
+                    "description":  "Open to opportunities in software development, IAM, and penetration testing.",
+                    "email":  "your.email@example.com",
+                    "linkedin":  {
+                                     "url":  "https://www.linkedin.com/in/your-profile",
+                                     "label":  "linkedin.com/in/your-profile"
+                                 },
+                    "github":  {
+                                   "url":  "https://github.com/your-username",
+                                   "label":  "github.com/your-username"
+                               }
+                },
+    "footer":  {
+                   "text":  "(c) 2026 Professional Portfolio. Focused on software development, IAM, and penetration testing."
+               }
 }
