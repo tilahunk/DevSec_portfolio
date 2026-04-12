@@ -63,6 +63,15 @@ function setAttribute(selector, name, value) {
   if (node && value != null) node.setAttribute(name, value);
 }
 
+function isPlaceholderContactValue(value) {
+  if (!value || typeof value !== 'string') return true;
+
+  const normalizedValue = value.trim().toLowerCase();
+  return normalizedValue.includes('your-profile') ||
+    normalizedValue.includes('your-username') ||
+    normalizedValue.includes('your.email@example.com');
+}
+
 function renderList(selector, items, renderItem) {
   const node = document.querySelector(selector);
   if (!node || !Array.isArray(items)) return;
@@ -130,12 +139,21 @@ function populatePage(data) {
 
   setText(selectors.contact.heading, data.contact?.heading);
   setText(selectors.contact.description, data.contact?.description);
-  setAttribute(selectors.contact.email, 'href', `mailto:${data.contact?.email || ''}`);
-  setText(selectors.contact.email, data.contact?.email);
-  setAttribute(selectors.contact.linkedin, 'href', data.contact?.linkedin?.url || '#');
-  setText(selectors.contact.linkedin, data.contact?.linkedin?.label);
-  setAttribute(selectors.contact.github, 'href', data.contact?.github?.url || '#');
-  setText(selectors.contact.github, data.contact?.github?.label);
+
+  if (!isPlaceholderContactValue(data.contact?.email)) {
+    setAttribute(selectors.contact.email, 'href', `mailto:${data.contact.email}`);
+    setText(selectors.contact.email, data.contact.email);
+  }
+
+  if (!isPlaceholderContactValue(data.contact?.linkedin?.url) && !isPlaceholderContactValue(data.contact?.linkedin?.label)) {
+    setAttribute(selectors.contact.linkedin, 'href', data.contact.linkedin.url);
+    setText(selectors.contact.linkedin, data.contact.linkedin.label);
+  }
+
+  if (!isPlaceholderContactValue(data.contact?.github?.url) && !isPlaceholderContactValue(data.contact?.github?.label)) {
+    setAttribute(selectors.contact.github, 'href', data.contact.github.url);
+    setText(selectors.contact.github, data.contact.github.label);
+  }
 
   setText(selectors.footer, data.footer?.text);
 }
