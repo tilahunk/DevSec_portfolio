@@ -1,38 +1,54 @@
 ﻿{
     "metadata":  {
-                     "title":  "Software Developer \u0026 Cybersecurity Professional"
+                     "title":  "Tilahun Kebede | Secure Software \u0026 Cybersecurity Portfolio"
                  },
     "brand":  {
-                  "subtitle":  "Software Developer | IAM | Pentester"
+                  "subtitle":  ".NET Software Developer | IAM | Penetration Tester"
               },
     "hero":  {
-                 "eyebrow":  "Software Development and Cybersecurity",
-                 "headline":  "Software developer from February 2019 to June 2024, now focused on cybersecurity with strengths in IAM and penetration testing.",
-                 "description":  "I combine a strong software engineering foundation with hands-on cybersecurity experience to build, assess, and improve secure digital systems.",
+                 "eyebrow":  "7+ years across software development and cybersecurity",
+                 "headline":  ".NET software developer and cybersecurity professional with 7+ years of combined experience, including 5+ years in development and 2+ years in cybersecurity (IAM and penetration testing).",
+                 "description":  "I design and build applications that solve real enterprise problems, then strengthen them through identity-first security and practical vulnerability testing.",
                  "photo":  "profile.jpg",
+                 "photoAlt":  "Portrait of Tilahun Kebede",
                  "cta":  "Contact Me",
-                 "ctaHref":  "#contact"
+                 "ctaHref":  "#contact",
+                 "badges":  [
+                                "5+ years in .NET enterprise development",
+                                "Identity and access management (IAM)",
+                                "Practical penetration testing and remediation"
+                             ],
+                 "stats":  [
+                               {
+                                   "value":  "5+",
+                                   "label":  "Years in Development"
+                               },
+                               {
+                                   "value":  "2+",
+                                   "label":  "Years in Cybersecurity (IAM and Pentesting)"
+                               }
+                           ]
              },
     "about":  {
                   "heading":  "About Me",
-                  "description":  "I bring together software development experience and cybersecurity expertise to deliver secure, reliable, and well-structured solutions.",
-                  "paragraph":  "My background in software development from February 2019 to June 2024 gave me a deep understanding of application architecture, system behavior, and secure implementation. Since July 2024, I have focused on cybersecurity, with particular strength in identity and access management and penetration testing.",
+                  "description":  "I combine strong software engineering foundations with practical cybersecurity expertise to deliver systems that are reliable, scalable, and secure.",
+                  "paragraph":  "I have more than five years of experience in software development, primarily with the .NET framework, where I built and improved applications that solved enterprise business problems. Over the years, I expanded into cybersecurity, with hands-on experience in identity and access management and penetration testing to reduce risk and improve security posture.",
                   "items":  [
-                                "Secure application development grounded in real-world engineering experience",
-                                "Identity and access management with a focus on governance, access control, and user lifecycle",
+                                "Enterprise application development in .NET with focus on maintainability and business impact",
+                                "Identity and access management across governance, authentication, authorization, and lifecycle",
                                 "Penetration testing for web applications and enterprise environments",
-                                "Clear security recommendations that support practical remediation"
+                                "Clear, actionable security recommendations that support practical remediation"
                             ],
-                  "cardHeading":  "Core strengths",
-                  "cardText":  "A professional blend of development discipline and security-focused problem solving."
+                  "cardHeading":  "Builds enterprise software with security built in",
+                  "cardText":  "Strong fit for roles requiring .NET development experience, IAM capability, and practical penetration testing."
               },
     "skills":  {
                    "heading":  "Skills",
                    "description":  "A focused skill set across software development, identity security, and offensive security testing.",
                    "items":  [
                                  {
-                                     "title":  "Software Development",
-                                     "description":  "Application development with emphasis on code quality, maintainability, and secure implementation."
+                                     "title":  ".NET Software Development",
+                                     "description":  "Enterprise application development with focus on clean architecture, maintainability, performance, and secure implementation."
                                  },
                                  {
                                      "title":  "Identity \u0026 Access Management",
@@ -43,7 +59,7 @@
                                      "description":  "Web application and network testing, vulnerability validation, security reporting, and remediation guidance."
                                  }
                              ]
-               },
+               },   
     "experience":  {
                        "heading":  "Experience",
                        "description":  "Professional experience spanning software development and cybersecurity, with current focus on IAM and penetration testing.",
@@ -51,17 +67,17 @@
                                      {
                                          "title":  "Cybersecurity Professional",
                                          "date":  "July 2024 - Present",
-                                         "details":  "Focused on cybersecurity with specialization in identity and access management and penetration testing, helping strengthen access controls, identify vulnerabilities, and support secure remediation."
+                                         "details":  "Focused on cybersecurity with specialization in IAM and penetration testing, helping organizations strengthen access controls, identify vulnerabilities, and prioritize effective remediation."
                                      },
                                      {
                                          "title":  "IAM \u0026 Penetration Testing",
                                          "date":  "July 2024 - Present",
-                                         "details":  "Worked across IAM and pentesting initiatives, contributing to access governance, authentication security, vulnerability assessment, and actionable risk reduction."
+                                         "details":  "Contributed to IAM and penetration testing initiatives across access governance, authentication security, vulnerability assessment, and actionable risk reduction."
                                      },
                                      {
-                                         "title":  "Software Developer",
+                                         "title":  ".NET Software Developer",
                                          "date":  "February 2019 - June 2024",
-                                         "details":  "Built and maintained software solutions with attention to performance, usability, and clean implementation, creating a strong technical foundation for later security-focused work."
+                                         "details":  "Developed and maintained .NET applications that solved enterprise operational problems, improved workflows, and delivered measurable business value."
                                      }
                                  ]
                    },
@@ -70,16 +86,16 @@
                      "description":  "Selected work that reflects my development background and current cybersecurity focus.",
                      "items":  [
                                    {
-                                       "title":  "Enterprise IAM Rollout",
-                                       "description":  "Supported the implementation of centralized identity management with MFA and stronger access controls to improve both security and usability."
+                                       "title":  "Enterprise Application Delivery (.NET)",
+                                       "description":  "Designed and delivered .NET-based business applications that addressed enterprise requirements and improved process efficiency."
                                    },
                                    {
-                                       "title":  "Web Application Pentest",
-                                       "description":  "Performed security testing on web applications, identified vulnerabilities, and provided practical remediation guidance informed by development experience."
+                                       "title":  "Enterprise IAM Implementation",
+                                       "description":  "Implemented and supported enterprise IAM and SSO integration using federated authentication flows (OAuth 2.0, OpenID Connect, and SAML), alongside MFA and role-based access controls to improve both security and user productivity."
                                    },
                                    {
-                                       "title":  "Access Governance Improvement",
-                                       "description":  "Reviewed identity and access controls to help reduce excessive privileges, improve governance, and support a more secure operating environment."
+                                       "title":  "Web Application Penetration Testing",
+                                       "description":  "Performed OWASP Top 10 vulnerability assessments on web applications using manual testing with Burp Suite and automated security testing, then provided practical remediation guidance grounded in software engineering experience."
                                    }
                                ]
                  },
@@ -97,6 +113,6 @@
                                }
                 },
     "footer":  {
-                   "text":  "(c) 2026 Professional Portfolio. Focused on software development, IAM, and penetration testing."
+                   "text":  "(c) 2026 Tilahun Kebede. Software development, IAM, and penetration testing."
                }
 }
