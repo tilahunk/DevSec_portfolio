@@ -3,162 +3,184 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SENIOR Software Developer & Cybersecurity Professional</title>
+  <meta
+    name="description"
+    content="Portfolio of Tilahun Kebede, a software developer and cybersecurity professional focused on IAM, secure engineering, and penetration testing."
+  />
+  <title>Tilahun Kebede | Secure Software & Cybersecurity Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <p id="brand-subtitle">SENIOR Software Developer | IAM | Pentester</p>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="Tilahun Kebede home">
+          <span class="brand-mark">TK</span>
+          <p id="brand-subtitle">Software Developer | IAM | Pentester</p>
+        </a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </div>
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <section class="hero section" id="home">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow" id="hero-eyebrow">Software Development and Cybersecurity</p>
-          <h2 id="hero-headline">Software developer from February 2019 to June 2024, now focused on cybersecurity with strengths in IAM and penetration testing.</h2>
-          <p id="hero-description">I combine a strong software engineering foundation with hands-on cybersecurity experience to build, assess, and improve secure digital systems.</p>
-          <a class="primary-btn" id="hero-cta" href="#contact">Contact Me</a>
-        </div>
-        <div class="hero-photo">
-          <img id="hero-photo" src="" alt="Professional portrait" />
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section-heading">
-          <h2 id="about-heading">About Me</h2>
-          <p id="about-description">I bring together software development experience and cybersecurity expertise to deliver secure, reliable, and well-structured solutions.</p>
-        </div>
-
-        <div class="grid-2">
-          <div>
-            <p id="about-paragraph">My background in software development from February 2019 to June 2024 gave me a deep understanding of application architecture, system behavior, and secure implementation. Since July 2024, I have focused on cybersecurity, with particular strength in identity and access management and penetration testing.</p>
-            <ul id="about-list">
-              <li>Secure application development grounded in real-world engineering experience</li>
-              <li>Identity and access management with a focus on governance, access control, and user lifecycle</li>
-              <li>Penetration testing for web applications and enterprise environments</li>
-              <li>Clear security recommendations that support practical remediation</li>
+    <main>
+      <section class="hero section" id="home">
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <p class="eyebrow" id="hero-eyebrow">Secure software engineering and cybersecurity</p>
+            <h1 id="hero-headline">Software developer turned cybersecurity professional with hands-on strengths in IAM and penetration testing.</h1>
+            <p class="hero-description" id="hero-description">
+              I help teams ship secure systems by combining engineering discipline, security thinking, and clear remediation guidance.
+            </p>
+            <ul class="hero-badges" id="hero-badges">
+              <li>Secure engineering mindset</li>
+              <li>Identity and access management</li>
+              <li>Practical penetration testing</li>
             </ul>
+            <div class="hero-actions">
+              <a class="primary-btn" id="hero-cta" href="#contact">Contact Me</a>
+              <a class="secondary-btn" href="#projects">View Projects</a>
+            </div>
+            <div class="hero-stats" id="hero-stats" aria-label="Professional highlights">
+              <article class="stat-card">
+                <span class="stat-value">5+</span>
+                <span class="stat-label">Years in software development</span>
+              </article>
+              <article class="stat-card">
+                <span class="stat-value">2024</span>
+                <span class="stat-label">Focused on cybersecurity from July 2024</span>
+              </article>
+              <article class="stat-card">
+                <span class="stat-value">2</span>
+                <span class="stat-label">Core specialties: IAM and pentesting</span>
+              </article>
+            </div>
           </div>
-          <div class="card highlight-card">
-            <h3 id="about-card-heading">Core strengths</h3>
-            <p id="about-card-text">A professional blend of development discipline and security-focused problem solving.</p>
+
+          <aside class="hero-panel">
+            <div class="hero-photo-shell">
+              <div class="hero-photo">
+                <img id="hero-photo" src="profile.jpg" alt="Professional portrait" />
+              </div>
+            </div>
+            <div class="signal-card">
+              <h2 id="about-card-heading">Builds secure systems with engineering discipline</h2>
+              <p id="about-card-text">
+                Strong fit for roles that value software development foundations, identity security, and practical security improvement.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-kicker">Why I Stand Out</p>
+            <h2 id="about-heading">About Me</h2>
+            <p id="about-description">I bring together software development experience and cybersecurity expertise to deliver secure, reliable, and well-structured solutions.</p>
+          </div>
+          <div class="grid-2">
+            <div class="story-card">
+              <p id="about-paragraph">
+                My background in software development from February 2019 to June 2024 gave me a deep understanding of application architecture, system behavior, and secure implementation. Since July 2024, I have focused on cybersecurity, with particular strength in identity and access management and penetration testing.
+              </p>
+            </div>
+            <div class="capability-card">
+              <h3>What I Offer</h3>
+              <ul id="about-list">
+                <li>Secure application development grounded in real-world engineering experience</li>
+                <li>Identity and access management with a focus on governance, access control, and user lifecycle</li>
+                <li>Penetration testing for web applications and enterprise environments</li>
+                <li>Clear security recommendations that support practical remediation</li>
+              </ul>
+            </div>
           </div>
         </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-kicker">Core Capability Areas</p>
+            <h2 id="skills-heading">Skills</h2>
+            <p id="skills-description">A focused skill set across software development, identity security, and offensive security testing.</p>
+          </div>
+          <div class="cards-grid skill-grid" id="skills-grid">
+            <article class="skill-card">
+              <h3>Software Development</h3>
+              <p>Application development with emphasis on code quality, maintainability, and secure implementation.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-kicker">Career Journey</p>
+            <h2 id="experience-heading">Experience</h2>
+            <p id="experience-description">Professional experience spanning software development and cybersecurity, with current focus on IAM and penetration testing.</p>
+          </div>
+          <div class="timeline" id="experience-timeline">
+            <article class="timeline-item">
+              <h3>Cybersecurity Professional</h3>
+              <span>July 2024 - Present</span>
+              <p>Focused on cybersecurity with specialization in identity and access management and penetration testing, helping strengthen access controls, identify vulnerabilities, and support secure remediation.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-kicker">Selected Work</p>
+            <h2 id="projects-heading">Projects</h2>
+            <p id="projects-description">Selected work that reflects my development background and current cybersecurity focus.</p>
+          </div>
+          <div class="cards-grid project-grid" id="projects-grid">
+            <article class="project-card">
+              <h3>Enterprise IAM Rollout</h3>
+              <p>Supported the implementation of centralized identity management with MFA and stronger access controls to improve both security and usability.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-contact" id="contact">
+        <div class="container contact-layout">
+          <div class="section-heading contact-heading">
+            <p class="section-kicker">Let's Connect</p>
+            <h2 id="contact-heading">Contact</h2>
+            <p id="contact-description">Open to opportunities in software development, IAM, and penetration testing.</p>
+          </div>
+          <div class="contact-card">
+            <p class="contact-label">Email</p>
+            <p><a id="contact-email" href="mailto:tila2kebede@gmail.com">tila2kebede@gmail.com</a></p>
+            <p class="contact-label">LinkedIn</p>
+            <p><a id="contact-linkedin" href="https://www.linkedin.com/in/tilahun-kebede-408162264/" target="_blank" rel="noreferrer">linkedin.com/in/tilahun-kebede-408162264/</a></p>
+            <p class="contact-label">GitHub</p>
+            <p><a id="contact-github" href="https://github.com/gtilahunk" target="_blank" rel="noreferrer">github.com/gtilahunk</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p id="footer-text">(c) 2026 Tilahun Kebede. Software development, IAM, and penetration testing.</p>
       </div>
-    </section>
-
-    <section class="section" id="skills">
-      <div class="container">
-        <div class="section-heading">
-          <h2 id="skills-heading">Skills</h2>
-          <p id="skills-description">A focused skill set across software development, identity security, and offensive security testing.</p>
-        </div>
-
-        <div class="cards-grid" id="skills-grid">
-          <article class="skill-card">
-            <h3>Software Development</h3>
-            <p>Application development with emphasis on code quality, maintainability, and secure implementation.</p>
-          </article>
-          <article class="skill-card">
-            <h3>Identity & Access Management</h3>
-            <p>IAM governance, SSO, MFA, RBAC, least privilege, access reviews, and identity lifecycle management.</p>
-          </article>
-          <article class="skill-card">
-            <h3>Penetration Testing</h3>
-            <p>Web application and network testing, vulnerability validation, security reporting, and remediation guidance.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="experience">
-      <div class="container">
-        <div class="section-heading">
-          <h2 id="experience-heading">Experience</h2>
-          <p id="experience-description">Professional experience spanning software development and cybersecurity, with current focus on IAM and penetration testing.</p>
-        </div>
-
-        <div class="timeline" id="experience-timeline">
-          <article class="timeline-item">
-            <h3>Cybersecurity Professional</h3>
-            <span>July 2024 - Present</span>
-            <p>Focused on cybersecurity with specialization in identity and access management and penetration testing, helping strengthen access controls, identify vulnerabilities, and support secure remediation.</p>
-          </article>
-          <article class="timeline-item">
-            <h3>IAM &amp; Penetration Testing</h3>
-            <span>July 2024 - Present</span>
-            <p>Worked across IAM and pentesting initiatives, contributing to access governance, authentication security, vulnerability assessment, and actionable risk reduction.</p>
-          </article>
-          <article class="timeline-item">
-            <h3>Software Developer</h3>
-            <span>February 2019 - June 2024</span>
-            <p>Built and maintained software solutions with attention to performance, usability, and clean implementation, creating a strong technical foundation for later security-focused work.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="projects">
-      <div class="container">
-        <div class="section-heading">
-          <h2 id="projects-heading">Projects</h2>
-          <p id="projects-description">Selected work that reflects my development background and current cybersecurity focus.</p>
-        </div>
-
-        <div class="cards-grid" id="projects-grid">
-          <article class="project-card">
-            <h3>Enterprise SSO INTEGRATION</h3>
-            <p>Supported the implementation of centralized identity management with MFA and stronger access controls to improve both security and usability.</p>
-          </article>
-          <article class="project-card">
-            <h3>Web Application Pentest</h3>
-            <p>Performed security testing on web applications, identified vulnerabilities, and provided practical remediation guidance informed by development experience.</p>
-          </article>
-          <article class="project-card">
-            <h3>Access Governance Improvement</h3>
-            <p>Reviewed identity and access controls to help reduce excessive privileges, improve governance, and support a more secure operating environment.</p>
-            <p>Reviewed identity and access controls to help reduce excessive privileges, improve governance, and support a more secure operating environment.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="section-heading">
-          <h2 id="contact-heading">Contact</h2>
-          <p id="contact-description">Open to opportunities in software development, IAM, and penetration testing.</p>
-        </div>
-
-        <div class="contact-card">
-          <p>Email: <a id="contact-email" href="mailto:tila2kebede@gmail.com">tila2kebede@gmail.com</a></p>
-          <p>LinkedIn: <a id="contact-linkedin" href="https://www.linkedin.com/in/tilahun-kebede-408162264/" target="_blank" rel="noreferrer">linkedin.com/in/tilahun-kebede-408162264/</a></p>
-          <p>GitHub: <a id="contact-github" href="https://github.com/gtilahunk" target="_blank" rel="noreferrer">github.com/gtilahunk</a></p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p id="footer-text">(c) 2026 Professional Portfolio. Focused on software development, IAM, and penetration testing.</p>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </body>
 </html>
