@@ -185,12 +185,14 @@ a {
 
 .hero-copy h1 {
   margin: 0;
-  font-family: "Manrope", "Inter", "Segoe UI", sans-serif;
-  font-size: clamp(2.8rem, 5vw, 4.75rem);
-  font-weight: 800;
-  line-height: 1.04;
-  letter-spacing: -0.025em;
-  max-width: 12ch;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  font-size: clamp(1.8rem, 3.2vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.22;
+  letter-spacing: -0.01em;
+  color: #122742;
+  max-width: 28ch;
+  text-wrap: balance;
 }
 
 .hero-description {
